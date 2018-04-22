@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import LocalizedStrings from 'react-localization';
 import './App.css';
 import HomeScreen from './HomeScreen.js';
-import LoginFirstScreen from './LoginFirstScreen.js';
+import LoginScreen from './LoginScreen.js';
 import DataSheet_localizationSheet from './DataSheet_localizationSheet.js';
+import DataSheet_menu from './DataSheet_menu.js';
 
 
 export default class App extends Component {
@@ -12,13 +13,15 @@ export default class App extends Component {
 
     this.dataSheets = {};
     this.dataSheets['localizationSheet'] = new DataSheet_localizationSheet('localizationSheet');
+    this.dataSheets['menu'] = new DataSheet_menu('menu');
 
     this.dataSlots = {};
     this.dataSlots['ds_activeLang'] = "en";
+    this.dataSlots['ds_menu'] = "en";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
     this.state = {
-      currentScreen: 'loginfirst',
+      currentScreen: 'loginscreen',
       currentScreenProps: {},
       screenFormatId: '',
       screenTransitionForward: true,
@@ -144,14 +147,15 @@ export default class App extends Component {
           screenFormatId: this.state.screenFormatId
         },
         ds_activeLang: this.dataSlots['ds_activeLang'],
+        ds_menu: this.dataSlots['ds_menu'],
       };
       switch (screenId) {
         default:
           return null;
         case 'homescreen':
           return (<HomeScreen {...screenProps} />)
-        case 'loginfirst':
-          return (<LoginFirstScreen {...screenProps} />)
+        case 'loginscreen':
+          return (<LoginScreen {...screenProps} />)
       }
     }
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import SlideOutMenu from './SlideOutMenu';
 import btn_icon_283829 from './images/btn_icon_283829.png';
-import img_elRoundimage147187 from './images/HomeScreen_elRoundimage147187_147187.png';
+import img_elLogoIcon147187 from './images/HomeScreen_elLogoIcon147187_147187.png';
 import btn_icon_236422 from './images/btn_icon_236422.png';
 
 // UI framework component imports
@@ -17,12 +18,17 @@ export default class HomeScreen extends Component {
     super(props);
     
     this.state = {
-      elSwapper125276_visible: true,
+      elMenuSlideOut73311_visible: true,
     };
   }
 
-  onClick_elIconButton283829 = (ev) => {
-    this.setState({elSwapper125276_visible: true});
+  onClick_elMenuSlideOut73311 = (ev) => {
+  
+  }
+  
+  
+  onClick_elMenuIcon283829 = (ev) => {
+    this.setState({elMenuSlideOut73311_visible: false});
   
   }
   
@@ -48,19 +54,23 @@ export default class HomeScreen extends Component {
         backgroundColor: '#f4f4f4',
         pointerEvents: 'none',
      };
-    
-    let contentElement_elSwapper125276;  // This element's content can vary based on screen size
-    
-    const elSwapper125276 = this.state.elSwapper125276_visible ? (
-        <div className='hasNestedComps elSwapper125276'>
-          <div>
-            {contentElement_elSwapper125276}
+    const style_menuSlideOut_outer = {
+        boxShadow: '0.0px 2.3px 18px rgba(0, 0, 0, 0.1600)',
+        cursor: 'pointer',
+     };
+    const elMenuSlideOut73311 = this.state.elMenuSlideOut73311_visible ? (
+        <div className='hasNestedComps elMenuSlideOut73311' style={style_menuSlideOut_outer}>
+          <div onClick={this.onClick_elMenuSlideOut73311} >
+            <SlideOutMenu appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
           </div>
         
         </div>
         
      ) : null;
-    const style_iconButton = {
+    
+    let contentElement_elSwapper125276;  // This element's content can vary based on screen size
+    
+    const style_menuIcon = {
         display: 'block',
         backgroundImage: 'url('+btn_icon_283829+')',
         backgroundRepeat: 'no-repeat',
@@ -68,14 +78,14 @@ export default class HomeScreen extends Component {
         backgroundPosition: '0% 50%',
         cursor: 'pointer',
      };
-    const style_roundimage = {
-        backgroundImage: 'url('+img_elRoundimage147187+')',
+    const style_logoIcon = {
+        backgroundImage: 'url('+img_elLogoIcon147187+')',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%',
         backgroundSize: 'cover',
         pointerEvents: 'none',
      };
-    const style_iconButtonCopy = {
+    const style_notificationIcon = {
         display: 'block',
         backgroundImage: 'url('+btn_icon_236422+')',
         backgroundRepeat: 'no-repeat',
@@ -94,16 +104,25 @@ export default class HomeScreen extends Component {
           
         </div>
         <div className="layoutFlow" style={layoutFlowStyle}>
-          { elSwapper125276 }
+          <div className="flowRow flowRow_HomeScreen_elMenuSlideOut73311_73311">
+          { elMenuSlideOut73311 }
+          </div>
+          <div className='hasNestedComps elSwapper125276'>
+            <div>
+              {contentElement_elSwapper125276}
+            </div>
+          
+          </div>
+          
         </div>
         <Appbar className="navBar">
         </Appbar>
         
         <div className="screenFgContainer">
           <div className="foreground">
-            <div className='actionFont elIconButton283829' style={style_iconButton}  onClick={this.onClick_elIconButton283829}  />
-            <div className='elRoundimage147187' style={style_roundimage} />
-            <div className='actionFont elIconButtonCopy236422' style={style_iconButtonCopy}   />
+            <div className='actionFont elMenuIcon283829' style={style_menuIcon}  onClick={this.onClick_elMenuIcon283829}  />
+            <div className='elLogoIcon147187' style={style_logoIcon} />
+            <div className='actionFont elNotificationIcon236422' style={style_notificationIcon}   />
           </div>
         </div>
       </div>

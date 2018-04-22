@@ -253,6 +253,25 @@
   width: 100%;
 }
 
+/* This component has a fixed-size layout */
+  .SlideOutMenu {
+    min-height: 204px;
+    overflow: hidden;
+    width: 100%; /* This component was designed using a width of 272px */
+  }
+  .SlideOutMenu > .background > .containerMinHeight {
+    min-height: 204px;
+  }
+
+
+  .SlideOutMenu .elCard310236 {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 204px;
+  }
+
 
 /* Narrowest size for this element's responsive layout */
   .HomeScreen > .background > .elBackground732314 {
@@ -291,12 +310,97 @@
   }
 }
 
+@keyframes fadeIn_HomeScreen_elMenuSlideOut73311 {
+  0% { opacity: 0.0; }
+  44% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+.HomeScreen > .layoutFlow .elMenuSlideOut73311 {
+  animation: 0.45s fadeIn_HomeScreen_elMenuSlideOut73311;
+}
+
+/* Narrowest size for this element's responsive layout */
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 {
+    position: absolute;
+    margin-top: 50px;
+    width: 315px;
+    margin-left: 0px;
+  }
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > * { 
+  width: 315px;
+  }
+  
+  .flowRow_HomeScreen_elMenuSlideOut73311_73311 { 
+  }
+  
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > .background > .containerMinHeight {
+    min-height: 204px;
+  }
+
+@media (min-width: 568px) {
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 {
+    position: absolute;
+    margin-top: 64px;
+    width: 224px;
+    margin-left: 0px;
+  }
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > * { 
+  width: 224px;
+  }
+  
+  .flowRow_HomeScreen_elMenuSlideOut73311_73311 { 
+  }
+  
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > .background > .containerMinHeight {
+    min-height: 204px;
+  }
+
+}
+@media (min-width: 768px) {
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 {
+    position: absolute;
+    margin-top: 64px;
+    width: 306px;
+    margin-left: 0px;
+  }
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > * { 
+  width: 306px;
+  }
+  
+  .flowRow_HomeScreen_elMenuSlideOut73311_73311 { 
+  }
+  
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > .background > .containerMinHeight {
+    min-height: 203px;
+  }
+
+}
+@media (min-width: 1024px) {
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 {
+    position: absolute;
+    margin-top: 64px;
+    width: 406px;
+    margin-left: 0px;
+  }
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > * { 
+  width: 406px;
+  }
+  
+  .flowRow_HomeScreen_elMenuSlideOut73311_73311 { 
+  }
+  
+  .HomeScreen > .layoutFlow .elMenuSlideOut73311 > .background > .containerMinHeight {
+    min-height: 203px;
+  }
+
+}
+
 
 /* Narrowest size for this element's responsive layout */
   .HomeScreen > .layoutFlow > .elSwapper125276 {
-    margin-top: 78px;
+    margin-top: -202px;
     width: 272px;
-    margin-left: 26px;
+    margin-left: 334px;
   }
   .HomeScreen > .layoutFlow > .elSwapper125276 > * { 
   width: 272px;
@@ -308,9 +412,9 @@
 
 @media (min-width: 568px) {
   .HomeScreen > .layoutFlow > .elSwapper125276 {
-    margin-top: 78px;
+    margin-top: -225px;
     width: 272px;
-    margin-left: 26px;
+    margin-left: 235px;
   }
   .HomeScreen > .layoutFlow > .elSwapper125276 > * { 
   width: 272px;
@@ -323,12 +427,12 @@
 }
 @media (min-width: 768px) {
   .HomeScreen > .layoutFlow > .elSwapper125276 {
-    margin-top: 78px;
-    width: 270px;
-    margin-left: 26px;
+    margin-top: -929px;
+    width: 430px;
+    margin-left: 315px;
   }
   .HomeScreen > .layoutFlow > .elSwapper125276 > * { 
-  width: 270px;
+  width: 430px;
   }
   
   .HomeScreen > .layoutFlow > .elSwapper125276 > .background > .containerMinHeight {
@@ -338,12 +442,12 @@
 }
 @media (min-width: 1024px) {
   .HomeScreen > .layoutFlow > .elSwapper125276 {
-    margin-top: 88px;
-    width: 986px;
-    margin-left: 20px;
+    margin-top: 78px;
+    width: 588px;
+    margin-left: 418px;
   }
   .HomeScreen > .layoutFlow > .elSwapper125276 > * { 
-  width: 986px;
+  width: 588px;
   }
   
   .HomeScreen > .layoutFlow > .elSwapper125276 > .background > .containerMinHeight {
@@ -354,7 +458,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButton283829 {
+  .HomeScreen > .screenFgContainer > .foreground > .elMenuIcon283829 {
     line-height: 28px;
     position: absolute;
     left: calc(2.0% + 2px);
@@ -363,7 +467,7 @@
     height: 28px;
   }
 @media (min-width: 568px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButton283829 {
+  .HomeScreen > .screenFgContainer > .foreground > .elMenuIcon283829 {
     line-height: 28px;
     left: calc(2.0% + 2px);
     top: 8px;
@@ -372,7 +476,7 @@
   }
 }
 @media (min-width: 768px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButton283829 {
+  .HomeScreen > .screenFgContainer > .foreground > .elMenuIcon283829 {
     line-height: 40px;
     left: calc(2.0% + 2px);
     top: 6px;
@@ -381,7 +485,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButton283829 {
+  .HomeScreen > .screenFgContainer > .foreground > .elMenuIcon283829 {
     line-height: 42px;
     left: calc(2.0% + 2px);
     top: 8px;
@@ -392,7 +496,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .HomeScreen > .screenFgContainer > .foreground > .elRoundimage147187 {
+  .HomeScreen > .screenFgContainer > .foreground > .elLogoIcon147187 {
     position: absolute;
     left: calc(50.0% + 0px - 19px);
     top: 4px;
@@ -400,7 +504,7 @@
     height: 38px;
   }
 @media (min-width: 568px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elRoundimage147187 {
+  .HomeScreen > .screenFgContainer > .foreground > .elLogoIcon147187 {
     left: calc(50.0% + 0px - 19px);
     top: 4px;
     width: 38px;
@@ -408,7 +512,7 @@
   }
 }
 @media (min-width: 768px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elRoundimage147187 {
+  .HomeScreen > .screenFgContainer > .foreground > .elLogoIcon147187 {
     left: calc(50.0% + 0px - 19px);
     top: 12px;
     width: 38px;
@@ -416,7 +520,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elRoundimage147187 {
+  .HomeScreen > .screenFgContainer > .foreground > .elLogoIcon147187 {
     left: calc(50.0% + 0px - 19px);
     top: 14px;
     width: 38px;
@@ -426,7 +530,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButtonCopy236422 {
+  .HomeScreen > .screenFgContainer > .foreground > .elNotificationIcon236422 {
     line-height: 28px;
     position: absolute;
     right: calc(2.0% - -2px);
@@ -435,7 +539,7 @@
     height: 28px;
   }
 @media (min-width: 568px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButtonCopy236422 {
+  .HomeScreen > .screenFgContainer > .foreground > .elNotificationIcon236422 {
     line-height: 28px;
     right: calc(2.0% - -2px);
     top: 11px;
@@ -444,7 +548,7 @@
   }
 }
 @media (min-width: 768px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButtonCopy236422 {
+  .HomeScreen > .screenFgContainer > .foreground > .elNotificationIcon236422 {
     line-height: 40px;
     right: calc(2.0% - -2px);
     top: 11px;
@@ -453,7 +557,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .HomeScreen > .screenFgContainer > .foreground > .elIconButtonCopy236422 {
+  .HomeScreen > .screenFgContainer > .foreground > .elNotificationIcon236422 {
     line-height: 40px;
     right: calc(2.0% - -2px);
     top: 8px;
@@ -463,36 +567,36 @@
 }
 
 /* This component has a fixed-size layout */
-  .Comp1 {
+  .LoginDialog {
     min-height: 239px;
     width: 100%; /* This component was designed using a width of 322px */
   }
-  .Comp1 > .background > .containerMinHeight {
+  .LoginDialog > .background > .containerMinHeight {
     min-height: 239px;
   }
 
 
-.Comp1 .elField258097 input {
+.LoginDialog .elEmail58097 input {
   color: #fbbc50;
 }
 
-.Comp1 .elField258097 input {
+.LoginDialog .elEmail58097 input {
   border-bottom-color: #fbbc50;
 }
 
-.Comp1 .elField258097 input::input-placeholder {
+.LoginDialog .elEmail58097 input::input-placeholder {
   color: rgba(251, 188, 80, 0.5000);
 }
 
-.Comp1 .elField258097 input::placeholder {
+.LoginDialog .elEmail58097 input::placeholder {
   color: rgba(251, 188, 80, 0.5000);
 }
 
-  .Comp1 .elField258097 {
+  .LoginDialog .elEmail58097 {
     margin-top: 52px;
     width: 100%;
   }
-  .Comp1 .elField258097 > * { 
+  .LoginDialog .elEmail58097 > * { 
   margin-left: auto;
   width: 226px;
   margin-right: 49px;
@@ -500,40 +604,47 @@
   
 
 
-.Comp1 .elField512968 input {
+.LoginDialog .elPassword512968 input {
   color: #fbbc50;
 }
 
-.Comp1 .elField512968 input {
+.LoginDialog .elPassword512968 input {
   border-bottom-color: #fbbc50;
 }
 
-.Comp1 .elField512968 input::input-placeholder {
+.LoginDialog .elPassword512968 input::input-placeholder {
   color: rgba(251, 188, 80, 0.5000);
 }
 
-.Comp1 .elField512968 input::placeholder {
+.LoginDialog .elPassword512968 input::placeholder {
   color: rgba(251, 188, 80, 0.5000);
 }
 
-  .Comp1 .elField512968 {
+  .LoginDialog .elPassword512968 {
     margin-top: 19px;
     width: 100%;
   }
-  .Comp1 .elField512968 > * { 
+  .LoginDialog .elPassword512968 > * { 
   margin-left: auto;
   width: 226px;
   margin-right: 49px;
   }
   
 
+@keyframes fadeIn_LoginDialog_elLoginButton276758 {
+  from { opacity: 0.0; }
+  to   { opacity: 1.0; }
+}
+.LoginDialog .elLoginButton276758 {
+  animation: 0.25s fadeIn_LoginDialog_elLoginButton276758;
+}
 
-  .Comp1 .elButton276758 {
+  .LoginDialog .elLoginButton276758 {
     line-height: 35px;
     margin-top: 30px;
     width: 100%;
   }
-  .Comp1 .elButton276758 > * { 
+  .LoginDialog .elLoginButton276758 > * { 
   margin-left: auto;
   width: 145px;
   margin-right: 86px;
@@ -543,7 +654,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .LoginFirstScreen > .background > .elHeaderb149901 {
+  .LoginScreen > .background > .elHeaderb149901 {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -552,7 +663,7 @@
     height: 100%;
   }
 @media (min-width: 568px) {
-  .LoginFirstScreen > .background > .elHeaderb149901 {
+  .LoginScreen > .background > .elHeaderb149901 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -561,7 +672,7 @@
   }
 }
 @media (min-width: 768px) {
-  .LoginFirstScreen > .background > .elHeaderb149901 {
+  .LoginScreen > .background > .elHeaderb149901 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -570,7 +681,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .LoginFirstScreen > .background > .elHeaderb149901 {
+  .LoginScreen > .background > .elHeaderb149901 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -581,7 +692,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .LoginFirstScreen > .background > .elBackground516277 {
+  .LoginScreen > .background > .elBackground516277 {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -590,7 +701,7 @@
     height: 100%;
   }
 @media (min-width: 568px) {
-  .LoginFirstScreen > .background > .elBackground516277 {
+  .LoginScreen > .background > .elBackground516277 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -599,7 +710,7 @@
   }
 }
 @media (min-width: 768px) {
-  .LoginFirstScreen > .background > .elBackground516277 {
+  .LoginScreen > .background > .elBackground516277 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -608,7 +719,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .LoginFirstScreen > .background > .elBackground516277 {
+  .LoginScreen > .background > .elBackground516277 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -619,60 +730,60 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .LoginFirstScreen > .layoutFlow > .elComp617422 {
+  .LoginScreen > .layoutFlow > .elComp617422 {
     margin-top: 296px;
     width: 754px;
     margin-left: calc(16.3% - 377px);
   }
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > * { 
+  .LoginScreen > .layoutFlow > .elComp617422 > * { 
   width: 754px;
   }
   
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
+  .LoginScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
     min-height: 234px;
   }
 
 @media (min-width: 568px) {
-  .LoginFirstScreen > .layoutFlow > .elComp617422 {
+  .LoginScreen > .layoutFlow > .elComp617422 {
     margin-top: 13px;
     width: 754px;
     margin-left: calc(44.8% - 377px);
   }
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > * { 
+  .LoginScreen > .layoutFlow > .elComp617422 > * { 
   width: 754px;
   }
   
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
+  .LoginScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
     min-height: 234px;
   }
 
 }
 @media (min-width: 768px) {
-  .LoginFirstScreen > .layoutFlow > .elComp617422 {
+  .LoginScreen > .layoutFlow > .elComp617422 {
     margin-top: 757px;
     width: 750px;
     margin-left: calc(35.9% - 375px);
   }
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > * { 
+  .LoginScreen > .layoutFlow > .elComp617422 > * { 
   width: 750px;
   }
   
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
+  .LoginScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
     min-height: 234px;
   }
 
 }
 @media (min-width: 1024px) {
-  .LoginFirstScreen > .layoutFlow > .elComp617422 {
+  .LoginScreen > .layoutFlow > .elComp617422 {
     margin-top: 314px;
     width: 750px;
     margin-left: calc(54.1% - 375px);
   }
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > * { 
+  .LoginScreen > .layoutFlow > .elComp617422 > * { 
   width: 750px;
   }
   
-  .LoginFirstScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
+  .LoginScreen > .layoutFlow > .elComp617422 > .background > .containerMinHeight {
     min-height: 234px;
   }
 
@@ -680,7 +791,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .LoginFirstScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
+  .LoginScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
     position: absolute;
     left: calc(50.0% + 0px - 38px);
     top: 81px;
@@ -688,7 +799,7 @@
     height: 78px;
   }
 @media (min-width: 568px) {
-  .LoginFirstScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
+  .LoginScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
     left: calc(50.0% + -199px - 38px);
     top: 64px;
     width: 77px;
@@ -696,7 +807,7 @@
   }
 }
 @media (min-width: 768px) {
-  .LoginFirstScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
+  .LoginScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
     left: calc(50.0% + 0px - 38px);
     top: 80px;
     width: 76px;
@@ -704,7 +815,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .LoginFirstScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
+  .LoginScreen > .screenFgContainer > .foreground > .elRoundimage688288 {
     left: calc(50.0% + 0px - 38px);
     top: 80px;
     width: 76px;

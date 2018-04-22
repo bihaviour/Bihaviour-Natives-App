@@ -102,6 +102,12 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     this.items.push(item);
     item['key'] = "comp1_button_276758";
     item['en'] = "ENTER";
+    
+    item = {};
+    item.key = key++;
+    this.items.push(item);
+    item['key'] = "loginDialog_login_button";
+    item['en'] = "ENTER";
   }
 
   getStringsByLanguage = () => {

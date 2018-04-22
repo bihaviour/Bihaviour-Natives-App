@@ -50,7 +50,7 @@ export default class Comp1 extends Component {
      };
     const style_button = {
         display: 'block',
-        color: '#fbbc50',
+        color: 'white',
         textAlign: 'center',
      };
     const style_button_outer = {
@@ -71,7 +71,7 @@ export default class Comp1 extends Component {
           </div>
           
           <div className='actionFont elButton276758' style={style_button_outer}>
-            <Button style={style_button}  variant="flat" color="accent" onClick={this.onClick_elButton276758} >
+            <Button style={style_button}  variant="raised" color="accent" onClick={this.onClick_elButton276758} >
               {this.props.locStrings.comp1_button_276758}
             </Button>
           

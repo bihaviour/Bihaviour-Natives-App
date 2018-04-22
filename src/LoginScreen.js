@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import img_elHeaderb149901 from './images/LoginFirstScreen_elHeaderb149901_149901.jpg';
-import Comp1 from './Comp1';
+import img_elHeaderb149901 from './images/LoginScreen_elHeaderb149901_149901.jpg';
+import LoginDialog from './LoginDialog';
 import img_elRoundimage688288 from './images/HomeScreen_elLogoIcon147187_147187.png';
 
 
-export default class LoginFirstScreen extends Component {
+export default class LoginScreen extends Component {
 
   // Properties used by this component:
   // appActions, deviceInfo
@@ -47,7 +47,7 @@ export default class LoginFirstScreen extends Component {
      };
     
     return (
-      <div className="AppScreen LoginFirstScreen" style={baseStyle}>
+      <div className="AppScreen LoginScreen" style={baseStyle}>
         <div className="background">
           <div className='containerMinHeight elHeaderb149901' style={style_headerb} />
           <div className='containerMinHeight elBackground516277' style={style_background_outer}>
@@ -59,7 +59,7 @@ export default class LoginFirstScreen extends Component {
         <div className="layoutFlow" style={layoutFlowStyle}>
           <div className='hasNestedComps elComp617422'>
             <div>
-              <Comp1 appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <LoginDialog appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           
           </div>
