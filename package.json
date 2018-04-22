@@ -1,8 +1,6 @@
 {
   "name": "exported-from-react-studio",
   "version": "0.0.1",
-  "homepage": "https://neonto.cloud/preview/7vpdbq9b",
-
   "private": true,
   "dependencies": {
     "muicss": "^0.9.31",
